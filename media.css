@@ -1,12 +1,63 @@
+
 body {
     background: url("https://wallpapers.com/images/featured/pastel-green-aesthetic-laptop-750m010qp4ylf69m.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia';
     margin: 0;
     padding: 0;
+    
   }
+
+  nav {
+  background-color: #6e8b4d;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .left-sidebar,
+  .right-sidebar {
+    width: 25%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #c9d3b5;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    font-size: 0.9rem;
+  }
+  
+  .media-shelf {
+    flex: 1;
+  }
+  
   
   .media-shelf {
     max-width: 800px;
@@ -53,4 +104,35 @@ body {
     height: 140px;
     border-radius: 6px;
     border: 1;
+  }
+
+  .chatbox {
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 3px double #6e8b4d;
+  }
+
+  .chatbox::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 80px;
+    height: 30px;
+    background: url('https://static.vecteezy.com/system/resources/previews/043/848/005/non_2x/textured-white-washi-tape-strips-scrapbooking-masking-tape-piece-on-transparent-background-free-png.png') no-repeat center/contain;
+    z-index: 2;
+  }
+  
+  .chatbox h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #5a220e;
+    font-family: Georgia, serif;
   }
