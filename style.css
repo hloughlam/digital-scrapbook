@@ -140,7 +140,8 @@ body {
   
   /* ========= MAIN CONTENT ======== */
   .main-content {
-    width: 75%;
+    flex: 1;
+    min-width: 0;
     padding: 2rem;
     color: #fff8e1;
   }
@@ -170,7 +171,7 @@ body {
   blockquote {
     font-family: 'Georgia', serif;
     font-style: italic;
-    color:#f5e6dc
+    color:#f5e6dc;
     margin: 1rem 0;
     padding: 0.5rem 1rem;
     background: #fff8e1;
@@ -309,12 +310,44 @@ body {
   .r8 { transform: rotate(3deg); }
   .r9 { transform: rotate(2deg); }
 
-  /* .book {
-    background: #fdfdf5;
-    padding: 0.3rem;
-    box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
-    border: 1px solid #ddd;
-    border-bottom: 2rem solid #fdfdf5; 
-    transform: rotate(var(--angle));
-    transition: transform 0.3s ease;
-  } */
+  @media (max-width: 900px) {
+    .site-wrapper {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .sidebar,
+    .main-content {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  
+    .side-by-side-posts {
+      flex-direction: column;
+    }
+  
+    .sticky-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .chatbox {
+      margin: 2rem auto;
+    }
+  
+    .scrapbook-nav a {
+      font-size: 1rem;
+      height: 50px;
+    }
+  
+    .book-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .book img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
