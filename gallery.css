@@ -1,0 +1,94 @@
+
+body {
+    background: url("https://images.unsplash.com/photo-1733499625839-267296a7457b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: transparent;
+    font-family: 'Courier New', cursive;
+    font-size: 1.1rem;
+  }
+  .top-nav a {
+    text-decoration: none;
+    color: #663399;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  }
+  .top-nav a:hover {
+    background-color: #fceff9;
+  }
+  
+
+  .photo-frame {
+    width: 80%;
+    margin: auto;
+    border: 4px solid #322410;
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .wire-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .wire-row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #999;
+  }
+  
+  .photo {
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    width: 100px;
+    padding: 0.5rem 0.5rem 1.2rem;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    position: relative;
+  }
+  
+  .photo img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+  
+  .photo::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 15px;
+    background: url('https://example.com/clothespin.png') no-repeat center/contain;
+  }
+  
+  .photo-inner {
+    position: relative;
+    display: inline-block;
+  }

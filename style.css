@@ -1,0 +1,320 @@
+
+body {
+    background: url("https://stamprints.com/cdn/shop/products/medieval-book-collection-retro-english-newspaper-music-score-scrapbook-paper-b4_800x.jpeg?v=1744882600");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .site-wrapper {
+    display: flex;
+    /* align-items: flex-start; */
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  /* ========= LEFT SIDEBAR ======== */
+    .sidebar {
+        width: 25%;
+        background-color: #3f0807;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        color: #d4d4c6;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+  .sidebar h1 {
+    font-size: 2rem;
+    color: #d4d4c6;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar nav a {
+    text-decoration: none;
+    color: #d4d4c6;
+  }
+
+  .scrapbook-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .scrapbook-nav li {
+    margin-bottom: 1rem;
+  }
+  
+  .scrapbook-nav a {
+    display: flex;                /* use flex layout */
+    justify-content: center;     /* center text horizontally */
+    align-items: center;         /* center text vertically */
+    height: 60px;                /* consistent button height */
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+.nav-home a { transform: rotate(-2deg); }
+.nav-about a { transform: rotate(1.5deg); }
+.nav-gallery a { transform: rotate(-1.2deg); }
+.nav-blog a { transform: rotate(2deg); }
+.nav-resources a { transform: rotate(-0.8deg); }
+
+.scrapbook-nav a:hover {
+    transform: rotate(0deg) scale(1.05);
+    transition: transform 0.2s ease;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  
+  /* Unique backgrounds for each link */
+  .nav-home a {
+    background-image: url('https://stamprints.com/cdn/shop/products/medieval-book-collection-retro-english-newspaper-music-score-scrapbook-paper-b_800x.jpeg?v=1744882600');
+  }
+  
+  .nav-about a {
+    background-image: url('https://m.media-amazon.com/images/I/91pM7N6OlfL._AC_UF350,350_QL80_.jpg');
+  }
+  
+  .nav-gallery a {
+    background-image: url('https://ae01.alicdn.com/kf/Scf945e75e0c140dc82216de72aa9840el.jpg_640x640q90.jpg');
+  }
+  
+  .nav-blog a {
+    background-image: url('https://m.media-amazon.com/images/I/71qRsXZonFL._AC_UF350,350_QL80_.jpg');
+  }
+  
+  .nav-resources a {
+    background-image: url('https://stamprints.com/cdn/shop/products/attic-book-collection-series-material-paper-journal-stamprints-1.jpeg?v=1744862490');
+  }
+  
+
+  .chatbox {
+    background-color: #f5e6dc;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 3px double #4b2e2e;
+  }
+  /* Tape on top middle */
+  .chatbox::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 80px;
+    height: 30px;
+    background: url('https://static.vecteezy.com/system/resources/previews/043/848/005/non_2x/textured-white-washi-tape-strips-scrapbooking-masking-tape-piece-on-transparent-background-free-png.png') no-repeat center/contain;
+    z-index: 2;
+  }
+  
+  .chatbox h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #5a220e;
+    font-family: Georgia, serif;
+  }
+  
+  /* ========= MAIN CONTENT ======== */
+  .main-content {
+    width: 75%;
+    padding: 2rem;
+    color: #fff8e1;
+  }
+
+  .scrap-border-top {
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/050/765/291/small/rectangular-frame-with-geometric-pattern-of-gold-chains-isolated-watercolor-illustration-for-design-magazines-web-pages-jewelry-blogs-sales-pawn-shops-png.png') repeat-x; /* replace with lace or washi PNG */
+    height: 25px;
+  }
+  
+  .post {
+    background-color: #3f0807;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    background-image: url('');
+    background-blend-mode: multiply;
+    
+  }
+  .currently-list {
+    list-style: square;
+    padding-left: 1.2rem;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+  }
+  
+  blockquote {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color:#f5e6dc
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background: #fff8e1;
+    border-left: 5px solid #5a220e;
+    transform: rotate(-1deg);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+  .side-by-side-posts {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 0rem;
+  }
+  
+  .side-by-side-posts .post {
+    flex: 1;
+  }
+  .sticky-wrapper {
+    display: flex;
+    align-items: center; /* centers horizontally */
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }  
+  
+  .sticky-note {
+    background-color: #f3e6b1; /* classic sticky yellow */
+    width: 100px;
+    padding: 1rem;
+    margin-bottom: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #4b2e2e;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+    position: relative;
+    border-radius: 4px;
+  }
+  .sticky-note::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(1deg);
+    width: 60px;
+    height: 20px;
+    background: url('https://static.vecteezy.com/system/resources/previews/043/848/005/non_2x/textured-white-washi-tape-strips-scrapbooking-masking-tape-piece-on-transparent-background-free-png.png') no-repeat center/contain;
+    z-index: 1;
+  }
+
+  .sticky-note.s1 {
+    transform: rotate(-2deg);
+  }
+  
+  .sticky-note.s2 {
+    transform: rotate(3deg) scale(1.02);
+    background-color: #f3e6b1;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+  }
+  .sticky-note.s3 {
+    transform: rotate(3deg) scale(1.02);
+    background-color: #f3e6b1;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+  }
+
+  .taped-post {
+    position: relative;
+    padding: 1.5rem;
+  }
+  
+  .taped-post::before,
+  .taped-post::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: url('https://static.vecteezy.com/system/resources/previews/043/848/005/non_2x/textured-white-washi-tape-strips-scrapbooking-masking-tape-piece-on-transparent-background-free-png.png') no-repeat center/contain; /* tape */
+    z-index: 2;
+  }
+  
+  .taped-post::before {
+    top: -10px;
+    left: -10px;
+    transform: rotate(-15deg);
+  }
+  
+  .taped-post::after {
+    top: -10px;
+    right: -10px;
+    transform: rotate(15deg);
+  }
+  
+  .taped-post .tape-bl {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 50px;
+    height: 20px;
+    background: url('https://static.vecteezy.com/system/resources/previews/043/848/005/non_2x/textured-white-washi-tape-strips-scrapbooking-masking-tape-piece-on-transparent-background-free-png.png') no-repeat center/contain;
+    transform: rotate(12deg);
+  }
+  
+  .taped-post .tape-br {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 50px;
+    height: 20px;
+    background: url('https://static.vecteezy.com/system/resources/previews/043/848/005/non_2x/textured-white-washi-tape-strips-scrapbooking-masking-tape-piece-on-transparent-background-free-png.png') no-repeat center/contain;
+    transform: rotate(-12deg);
+  }
+  
+ .book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .book {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  
+  .book img {
+    display: block;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  /* Random tilt rotations */
+  .r1 { transform: rotate(-3deg); }
+  .r2 { transform: rotate(2deg); }
+  .r3 { transform: rotate(-5deg); }
+  .r4 { transform: rotate(4deg); }
+  .r5 { transform: rotate(-2deg); }
+  .r6 { transform: rotate(3deg); }
+  .r7 { transform: rotate(-1.5deg); }
+  .r8 { transform: rotate(3deg); }
+  .r9 { transform: rotate(2deg); }
+
+  /* .book {
+    background: #fdfdf5;
+    padding: 0.3rem;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
+    border: 1px solid #ddd;
+    border-bottom: 2rem solid #fdfdf5; 
+    transform: rotate(var(--angle));
+    transition: transform 0.3s ease;
+  } */
